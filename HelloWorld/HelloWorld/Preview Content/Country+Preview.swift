@@ -12,7 +12,10 @@ extension RestCountries.Country {
         return RestCountries.Country(
             cca3: "qc",
             name: RestCountries.Name(common: "Québec"),
-            flags: RestCountries.Flags(png: "https://upload.wikimedia.org/wikipedia/commons/archive/0/0c/20091118074326%21Quebec_flag.png"),
+            flags: RestCountries.Flags(
+                png:
+                    "https://upload.wikimedia.org/wikipedia/commons/archive/0/0c/20091118074326%21Quebec_flag.png"
+            ),
             capital: ["Québec"],
             population: 8_485_000,
             continents: ["Amérique du Nord"]

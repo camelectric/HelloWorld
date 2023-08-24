@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  HelloWorld
+
+  Created by Philippe Landry on 2023-08-24.
+  
+*/
+"navigation_title" = "Hello World";
+"section_continent" = "Continent";
+"section_population" = "Population";
+"section_capital" = "Capital";

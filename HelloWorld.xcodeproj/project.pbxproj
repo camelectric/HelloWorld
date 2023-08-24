@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		A85714E02A9696FD0054BA4F /* HelloWorldApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85714DF2A9696FD0054BA4F /* HelloWorldApp.swift */; };
-		A85714E22A9696FD0054BA4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85714E12A9696FD0054BA4F /* ContentView.swift */; };
+		A85714E22A9696FD0054BA4F /* CountriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85714E12A9696FD0054BA4F /* CountriesView.swift */; };
 		A85714E42A9697000054BA4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A85714E32A9697000054BA4F /* Assets.xcassets */; };
 		A85714E72A9697000054BA4F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A85714E62A9697000054BA4F /* Preview Assets.xcassets */; };
 		A85714F12A9697010054BA4F /* HelloWorldTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85714F02A9697010054BA4F /* HelloWorldTests.swift */; };
 		A85714FB2A9697010054BA4F /* HelloWorldUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85714FA2A9697010054BA4F /* HelloWorldUITests.swift */; };
 		A85714FD2A9697010054BA4F /* HelloWorldUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85714FC2A9697010054BA4F /* HelloWorldUITestsLaunchTests.swift */; };
+		A85715252A96CFEF0054BA4F /* RestCountries+Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85715242A96CFEF0054BA4F /* RestCountries+Model.swift */; };
+		A85715272A96D5220054BA4F /* CountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85715262A96D5220054BA4F /* CountryView.swift */; };
+		A85715292A96DD3B0054BA4F /* CountriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A85715282A96DD3B0054BA4F /* CountriesService.swift */; };
+		A857152B2A97C9DA0054BA4F /* CountryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857152A2A97C9DA0054BA4F /* CountryViewModel.swift */; };
+		A857152F2A97DDB10054BA4F /* Country+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857152E2A97DDB10054BA4F /* Country+Preview.swift */; };
+		A85715552A97E7BA0054BA4F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A85715542A97E7BA0054BA4F /* Localizable.strings */; };
+		A85715572A97EB620054BA4F /* restcountries.json in Resources */ = {isa = PBXBuildFile; fileRef = A85715562A97EB620054BA4F /* restcountries.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +43,7 @@
 /* Begin PBXFileReference section */
 		A85714DC2A9696FD0054BA4F /* HelloWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85714DF2A9696FD0054BA4F /* HelloWorldApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldApp.swift; sourceTree = "<group>"; };
-		A85714E12A9696FD0054BA4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A85714E12A9696FD0054BA4F /* CountriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesView.swift; sourceTree = "<group>"; };
 		A85714E32A9697000054BA4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A85714E62A9697000054BA4F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A85714EC2A9697010054BA4F /* HelloWorldTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +51,13 @@
 		A85714F62A9697010054BA4F /* HelloWorldUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HelloWorldUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85714FA2A9697010054BA4F /* HelloWorldUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldUITests.swift; sourceTree = "<group>"; };
 		A85714FC2A9697010054BA4F /* HelloWorldUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloWorldUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A85715242A96CFEF0054BA4F /* RestCountries+Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RestCountries+Model.swift"; sourceTree = "<group>"; };
+		A85715262A96D5220054BA4F /* CountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryView.swift; sourceTree = "<group>"; };
+		A85715282A96DD3B0054BA4F /* CountriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesService.swift; sourceTree = "<group>"; };
+		A857152A2A97C9DA0054BA4F /* CountryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryViewModel.swift; sourceTree = "<group>"; };
+		A857152E2A97DDB10054BA4F /* Country+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+Preview.swift"; sourceTree = "<group>"; };
+		A85715542A97E7BA0054BA4F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		A85715562A97EB620054BA4F /* restcountries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = restcountries.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +88,7 @@
 		A85714D32A9696FD0054BA4F = {
 			isa = PBXGroup;
 			children = (
+				A85715542A97E7BA0054BA4F /* Localizable.strings */,
 				A85714DE2A9696FD0054BA4F /* HelloWorld */,
 				A85714EF2A9697010054BA4F /* HelloWorldTests */,
 				A85714F92A9697010054BA4F /* HelloWorldUITests */,
@@ -95,7 +110,8 @@
 			isa = PBXGroup;
 			children = (
 				A85714DF2A9696FD0054BA4F /* HelloWorldApp.swift */,
-				A85714E12A9696FD0054BA4F /* ContentView.swift */,
+				A85715302A97E2910054BA4F /* REST */,
+				A85715312A97E2A50054BA4F /* UI */,
 				A85714E32A9697000054BA4F /* Assets.xcassets */,
 				A85714E52A9697000054BA4F /* Preview Content */,
 			);
@@ -106,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				A85714E62A9697000054BA4F /* Preview Assets.xcassets */,
+				A857152E2A97DDB10054BA4F /* Country+Preview.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -113,6 +130,7 @@
 		A85714EF2A9697010054BA4F /* HelloWorldTests */ = {
 			isa = PBXGroup;
 			children = (
+				A85715562A97EB620054BA4F /* restcountries.json */,
 				A85714F02A9697010054BA4F /* HelloWorldTests.swift */,
 			);
 			path = HelloWorldTests;
@@ -127,6 +145,25 @@
 			path = HelloWorldUITests;
 			sourceTree = "<group>";
 		};
+		A85715302A97E2910054BA4F /* REST */ = {
+			isa = PBXGroup;
+			children = (
+				A85715242A96CFEF0054BA4F /* RestCountries+Model.swift */,
+				A85715282A96DD3B0054BA4F /* CountriesService.swift */,
+			);
+			path = REST;
+			sourceTree = "<group>";
+		};
+		A85715312A97E2A50054BA4F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A85715262A96D5220054BA4F /* CountryView.swift */,
+				A85714E12A9696FD0054BA4F /* CountriesView.swift */,
+				A857152A2A97C9DA0054BA4F /* CountryViewModel.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +174,7 @@
 				A85714D82A9696FD0054BA4F /* Sources */,
 				A85714D92A9696FD0054BA4F /* Frameworks */,
 				A85714DA2A9696FD0054BA4F /* Resources */,
+				A85715232A96CF640054BA4F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -232,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A85714E72A9697000054BA4F /* Preview Assets.xcassets in Resources */,
+				A85715552A97E7BA0054BA4F /* Localizable.strings in Resources */,
 				A85714E42A9697000054BA4F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A85715572A97EB620054BA4F /* restcountries.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,13 +292,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A85715232A96CF640054BA4F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A85714D82A9696FD0054BA4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A85714E22A9696FD0054BA4F /* ContentView.swift in Sources */,
+				A85715252A96CFEF0054BA4F /* RestCountries+Model.swift in Sources */,
+				A857152F2A97DDB10054BA4F /* Country+Preview.swift in Sources */,
+				A85714E22A9696FD0054BA4F /* CountriesView.swift in Sources */,
 				A85714E02A9696FD0054BA4F /* HelloWorldApp.swift in Sources */,
+				A857152B2A97C9DA0054BA4F /* CountryViewModel.swift in Sources */,
+				A85715272A96D5220054BA4F /* CountryView.swift in Sources */,
+				A85715292A96DD3B0054BA4F /* CountriesService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,8 +489,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,8 +518,8 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

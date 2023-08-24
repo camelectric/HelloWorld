@@ -10,27 +10,25 @@ import XCTest
 
 final class HelloWorldTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+    func test_service_and_view_model() async throws {
+        let endpoint = try XCTUnwrap(
+            Bundle(for: HelloWorldTests.self)
+                .url(forResource: "restcountries", withExtension: "json")
+            )
+        let service = CountriesService(endpoint: endpoint.absoluteString)
+        let countries = await service.loadData()
+        XCTAssertEqual(countries.count, 250)
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        let first = try XCTUnwrap(countries[1])
+        XCTAssertEqual(first.uid, "ALB")
+        XCTAssertEqual(first.name, "Albania")
+        XCTAssertEqual(first.flagURL, URL(string: "https://flagcdn.com/w320/al.png"))
+        XCTAssertEqual(first.capital, "Tirana")
+        XCTAssertEqual(
+            first.population.components(
+                separatedBy: CharacterSet.decimalDigits.inverted
+            ).joined(),
+            "2837743"
+        )
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-
 }

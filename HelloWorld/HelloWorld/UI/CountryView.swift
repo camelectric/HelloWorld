@@ -19,7 +19,7 @@ struct CountryView: View {
                            content: { image in
                         image.resizable()
                         .aspectRatio(contentMode: .fit)
-                        .shadow(radius: 10)
+                        .shadow(radius: 5)
                 },
                            placeholder: {
                     ProgressView().progressViewStyle(.circular)

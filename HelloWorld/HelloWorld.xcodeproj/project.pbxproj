@@ -21,6 +21,7 @@
 		A857152F2A97DDB10054BA4F /* Country+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = A857152E2A97DDB10054BA4F /* Country+Preview.swift */; };
 		A85715552A97E7BA0054BA4F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A85715542A97E7BA0054BA4F /* Localizable.strings */; };
 		A85715572A97EB620054BA4F /* restcountries.json in Resources */ = {isa = PBXBuildFile; fileRef = A85715562A97EB620054BA4F /* restcountries.json */; };
+		A86C1D442A982820001BAFF6 /* CountriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86C1D432A982820001BAFF6 /* CountriesViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		A857152E2A97DDB10054BA4F /* Country+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Country+Preview.swift"; sourceTree = "<group>"; };
 		A85715542A97E7BA0054BA4F /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		A85715562A97EB620054BA4F /* restcountries.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = restcountries.json; sourceTree = "<group>"; };
+		A86C1D432A982820001BAFF6 /* CountriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				A85715262A96D5220054BA4F /* CountryView.swift */,
 				A85714E12A9696FD0054BA4F /* CountriesView.swift */,
 				A857152A2A97C9DA0054BA4F /* CountryViewModel.swift */,
+				A86C1D432A982820001BAFF6 /* CountriesViewModel.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -321,6 +324,7 @@
 				A85715252A96CFEF0054BA4F /* RestCountries+Model.swift in Sources */,
 				A857152F2A97DDB10054BA4F /* Country+Preview.swift in Sources */,
 				A85714E22A9696FD0054BA4F /* CountriesView.swift in Sources */,
+				A86C1D442A982820001BAFF6 /* CountriesViewModel.swift in Sources */,
 				A85714E02A9696FD0054BA4F /* HelloWorldApp.swift in Sources */,
 				A857152B2A97C9DA0054BA4F /* CountryViewModel.swift in Sources */,
 				A85715272A96D5220054BA4F /* CountryView.swift in Sources */,

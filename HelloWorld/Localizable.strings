@@ -9,3 +9,5 @@
 "section_continent" = "Continent";
 "section_population" = "Population";
 "section_capital" = "Capital";
+"error_view_message" = "Sorry, we couldn't retrieve countries ☹️🎻. \n Please try again.";
+"error_view_retry" = "Reload Countries";

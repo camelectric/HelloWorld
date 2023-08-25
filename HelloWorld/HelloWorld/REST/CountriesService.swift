@@ -14,8 +14,8 @@ actor CountriesService {
         self.endpoint = endpoint
     }
 
-    func loadData() async -> [CountryViewModel] {
-        guard let url = URL(string: endpoint) else { return [] }
+    func loadData() async -> [CountryViewModel]? {
+        guard let url = URL(string: endpoint) else { return nil }
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
             let decodedResponse = try JSONDecoder().decode([RestCountries.Country].self, from: data)
@@ -23,7 +23,7 @@ actor CountriesService {
                 CountryViewModel(country: country)
             }.sorted { $0.name < $1.name }
         } catch {
-            return []
+            return nil
         }
     }
 }

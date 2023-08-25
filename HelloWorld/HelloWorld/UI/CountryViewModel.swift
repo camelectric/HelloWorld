@@ -24,3 +24,4 @@ struct CountryViewModel {
         continent = country.continents.first ?? "unknown"
     }
 }
+

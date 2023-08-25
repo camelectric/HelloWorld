@@ -8,12 +8,12 @@
 import SwiftUI
 
 struct CountriesView: View {
-    @State private var countries = [CountryViewModel]()
-    private var service = CountriesService()
+    @ObservedObject var viewModel = CountriesViewModel()
+    @State var showAlert = false
     var body: some View {
         NavigationView {
             Form {
-                List(countries, id: \.uid) { item in
+                List(viewModel.countries ?? [], id: \.uid) { item in
                         NavigationLink {
                             CountryView(viewModel: item)
                         } label: {
@@ -29,6 +29,7 @@ struct CountriesView: View {
                                     }
                                 )
                                 .frame(width: 40, height: 40)
+                                .shadow(radius: 5)
                                 Text(item.name).font(.headline)
                             }
                         }
@@ -37,11 +38,41 @@ struct CountriesView: View {
             .navigationTitle(LocalizedStringKey("navigation_title"))
             .navigationBarTitleDisplayMode(.inline)
             .task {
-                await countries = service.loadData()
+                await viewModel.reload()
+            }
+            .onChange(of: viewModel.error,
+                      perform: { value in
+                showAlert = value != nil
+            })
+            .alert(viewModel.error?.description ?? "", isPresented: $showAlert) {
+                ErrorView(viewModel: viewModel)
             }
         }
     }
 
+}
+
+struct ErrorView: View {
+    @ObservedObject var viewModel: CountriesViewModel
+
+    var body: some View {
+        RoundedRectangle(cornerRadius: 20)
+            .foregroundColor(.red)
+            .overlay {
+                VStack {
+                    Text(CountriesError.failedLoading.description)
+                        .font(.largeTitle)
+                        .foregroundColor(.white)
+
+                    Button(LocalizedStringKey("error_view_retry")) {
+                        Task {
+                            await viewModel.reload()
+                        }
+                    }
+                    .buttonStyle(.borderedProminent)
+                }
+            }
+    }
 }
 
 struct CountriesView_Previews: PreviewProvider {

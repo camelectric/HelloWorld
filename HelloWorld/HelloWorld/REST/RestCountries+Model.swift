@@ -7,7 +7,10 @@
 
 import Foundation
 
+/// Namespace RectCountries
 enum RestCountries {
+    
+    /// Objet Country retourné par le serveur
     struct Country: Codable {
         let cca3: String
         let name: Name
@@ -17,10 +20,12 @@ enum RestCountries {
         let continents: [String]
     }
 
+    /// Le nom d'un pays retourné par le serveur
     struct Name: Codable {
         let common: String
     }
 
+    /// Le drapeau d'un pays retourné par le serveur
     struct Flags: Codable {
         let png: String
     }

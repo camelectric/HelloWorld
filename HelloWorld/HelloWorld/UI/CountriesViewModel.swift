@@ -17,7 +17,7 @@ class CountriesViewModel: ObservableObject {
 
     func reload() async {
         error = nil
-        countries = await service.loadData()
+        countries = await service.loadCountries()
         if countries == nil {
             error = .failedLoading
         }

@@ -159,8 +159,8 @@
 		A85715312A97E2A50054BA4F /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				A85715262A96D5220054BA4F /* CountryView.swift */,
 				A85714E12A9696FD0054BA4F /* CountriesView.swift */,
+				A85715262A96D5220054BA4F /* CountryView.swift */,
 				A857152A2A97C9DA0054BA4F /* CountryViewModel.swift */,
 				A86C1D432A982820001BAFF6 /* CountriesViewModel.swift */,
 			);

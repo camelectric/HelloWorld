@@ -7,14 +7,18 @@
 
 import Foundation
 
+/// Le service REST qui retourne les pays
 actor CountriesService {
+    
+    /// le url  est injectable pour favoriser les tests unitaires
     let endpoint: String
 
     init(endpoint: String = "https://restcountries.com/v3.1/all?fields=cca3,name,flags,continents,population,capital") {
         self.endpoint = endpoint
     }
 
-    func loadData() async -> [CountryViewModel]? {
+    /// Appel web pour obtenir la liste des pays depuis le serveur
+    func loadCountries() async -> [CountryViewModel]? {
         guard let url = URL(string: endpoint) else { return nil }
         do {
             let (data, _) = try await URLSession.shared.data(from: url)

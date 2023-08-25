@@ -9,7 +9,7 @@ import Foundation
 
 /// Le service REST qui retourne les pays
 actor CountriesService {
-    
+
     /// le url  est injectable pour favoriser les tests unitaires
     let endpoint: String
 
@@ -17,7 +17,6 @@ actor CountriesService {
         self.endpoint = endpoint
     }
 
-    /// Appel web pour obtenir la liste des pays depuis le serveur
     func loadCountries() async -> [CountryViewModel]? {
         guard let url = URL(string: endpoint) else { return nil }
         do {
